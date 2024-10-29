@@ -1,0 +1,59 @@
+[0.019s] Invoking command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/calibrate_imu -- -j16 -l16
+[0.034s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.140s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.158s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.159s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.163s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.169s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.177s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.198s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.199s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.281s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.312s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[0.405s] -- Configuring done
+[0.410s] -- Generating done
+[0.411s] -- Build files have been written to: /home/waritt/urosrobotsim_ws/build/calibrate_imu
+[0.430s] [35m[1mConsolidate compiler generated dependencies of target cpp_node_test[0m
+[0.438s] [100%] Built target cpp_node_test
+[0.442s] [100%] Built target ament_cmake_python_copy_calibrate_imu
+[0.652s] running egg_info
+[0.652s] writing calibrate_imu.egg-info/PKG-INFO
+[0.652s] writing dependency_links to calibrate_imu.egg-info/dependency_links.txt
+[0.652s] writing top-level names to calibrate_imu.egg-info/top_level.txt
+[0.655s] reading manifest file 'calibrate_imu.egg-info/SOURCES.txt'
+[0.656s] writing manifest file 'calibrate_imu.egg-info/SOURCES.txt'
+[0.675s] [100%] Built target ament_cmake_python_build_calibrate_imu_egg
+[0.682s] Invoked command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/calibrate_imu -- -j16 -l16
+[0.704s] Invoking command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/calibrate_imu
+[0.709s] -- Install configuration: ""
+[0.709s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/environment/pythonpath.sh
+[0.709s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/environment/pythonpath.dsv
+[0.709s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/local/lib/python3.10/dist-packages/calibrate_imu-0.0.0-py3.10.egg-info
+[0.709s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/local/lib/python3.10/dist-packages/calibrate_imu-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.709s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/local/lib/python3.10/dist-packages/calibrate_imu-0.0.0-py3.10.egg-info/top_level.txt
+[0.709s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/local/lib/python3.10/dist-packages/calibrate_imu-0.0.0-py3.10.egg-info/PKG-INFO
+[0.709s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/local/lib/python3.10/dist-packages/calibrate_imu-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.710s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/local/lib/python3.10/dist-packages/calibrate_imu
+[0.710s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/local/lib/python3.10/dist-packages/calibrate_imu/__init__.py
+[0.710s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/local/lib/python3.10/dist-packages/calibrate_imu/dummy_module.py
+[0.734s] Listing '/home/waritt/urosrobotsim_ws/install/calibrate_imu/local/lib/python3.10/dist-packages/calibrate_imu'...
+[0.737s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/lib/calibrate_imu/imu_calibrate.py
+[0.737s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/lib/calibrate_imu/imu_setup.py
+[0.737s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/lib/calibrate_imu/cpp_node_test
+[0.737s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu
+[0.737s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/ament_index/resource_index/package_run_dependencies/calibrate_imu
+[0.737s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/ament_index/resource_index/parent_prefix_path/calibrate_imu
+[0.737s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/environment/ament_prefix_path.sh
+[0.737s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/environment/ament_prefix_path.dsv
+[0.738s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/environment/path.sh
+[0.738s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/environment/path.dsv
+[0.738s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/local_setup.bash
+[0.738s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/local_setup.sh
+[0.738s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/local_setup.zsh
+[0.738s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/local_setup.dsv
+[0.738s] -- Installing: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.dsv
+[0.738s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/ament_index/resource_index/packages/calibrate_imu
+[0.738s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/cmake/calibrate_imuConfig.cmake
+[0.738s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/cmake/calibrate_imuConfig-version.cmake
+[0.738s] -- Up-to-date: /home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.xml
+[0.740s] Invoked command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/calibrate_imu

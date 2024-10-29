@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from imu_interfaces/srv/ImuCalibration.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/Imu.idl"
+
+module imu_interfaces {
+  module srv {
+    struct ImuCalibration_Request {
+      sensor_msgs::msg::Imu imu_calib;
+    };
+    struct ImuCalibration_Response {
+      boolean success;
+    };
+  };
+};

@@ -1,0 +1,561 @@
+[0.068s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.068s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f2b71a6c0a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f2b71a23b50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f2b71a23b50>>)
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.174s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.175s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.175s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/waritt/urosrobotsim_ws'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(firmware) ignored
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibrate_imu) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibrate_imu) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibrate_imu) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibrate_imu) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibrate_imu) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibrate_imu) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibrate_imu) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibrate_imu) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/calibrate_imu) by extension 'ros'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/calibrate_imu' with type 'ros.ament_cmake' and name 'calibrate_imu'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_interfaces) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_interfaces) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_interfaces) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_interfaces) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_interfaces) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_interfaces) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_interfaces) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_interfaces) by extension 'ros'
+[0.185s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_interfaces' with type 'ros.ament_cmake' and name 'imu_interfaces'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/megarover_samples_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/megarover_samples_ros2) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/megarover_samples_ros2) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/megarover_samples_ros2) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/megarover_samples_ros2) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/megarover_samples_ros2) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/megarover_samples_ros2) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/megarover_samples_ros2) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/megarover_samples_ros2) by extension 'ros'
+[0.186s] DEBUG:colcon.colcon_core.package_identification:Package 'src/megarover_samples_ros2' with type 'ros.ament_cmake' and name 'megarover_samples_ros2'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/micro_ros_setup) by extension 'ros'
+[0.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/micro_ros_setup' with type 'ros.ament_cmake' and name 'micro_ros_setup'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'ros'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['cmake', 'python']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'cmake'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'python'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'ros'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['cmake', 'python']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'cmake'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'python'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['python_setup_py']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'python_setup_py'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'ros'
+[0.189s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uros/micro-ROS-Agent/micro_ros_agent' with type 'ros.ament_cmake' and name 'micro_ros_agent'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'ros'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['cmake', 'python']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'cmake'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'python'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['python_setup_py']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'python_setup_py'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'ros'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['cmake', 'python']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'cmake'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'python'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['python_setup_py']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'python_setup_py'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'ros'
+[0.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uros/micro_ros_msgs' with type 'ros.ament_cmake' and name 'micro_ros_msgs'
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.212s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/waritt/urosrobotsim_ws/install
+[0.213s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/waritt/uros_ws/install
+[0.213s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/waritt/robotsim_ws/install
+[0.213s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/waritt/ros2_ws/install
+[0.215s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 421 installed packages in /opt/ros/humble
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'calibrate_imu' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'calibrate_imu' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'calibrate_imu' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'calibrate_imu' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'calibrate_imu' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'calibrate_imu' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'calibrate_imu' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'calibrate_imu' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'calibrate_imu' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'calibrate_imu' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/waritt/urosrobotsim_ws/build/calibrate_imu', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/waritt/urosrobotsim_ws/install/calibrate_imu', 'merge_install': False, 'path': '/home/waritt/urosrobotsim_ws/src/calibrate_imu', 'symlink_install': False, 'test_result_base': None}
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'imu_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'imu_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'imu_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'imu_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'imu_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'imu_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'imu_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'imu_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'imu_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.248s] DEBUG:colcon.colcon_core.verb:Building package 'imu_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/waritt/urosrobotsim_ws/build/imu_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/waritt/urosrobotsim_ws/install/imu_interfaces', 'merge_install': False, 'path': '/home/waritt/urosrobotsim_ws/src/imu_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'megarover_samples_ros2' build argument 'cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'megarover_samples_ros2' build argument 'cmake_target' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'megarover_samples_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'megarover_samples_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'megarover_samples_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'megarover_samples_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'megarover_samples_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'megarover_samples_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'megarover_samples_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.248s] DEBUG:colcon.colcon_core.verb:Building package 'megarover_samples_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/waritt/urosrobotsim_ws/build/megarover_samples_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2', 'merge_install': False, 'path': '/home/waritt/urosrobotsim_ws/src/megarover_samples_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_target' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.248s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs', 'merge_install': False, 'path': '/home/waritt/urosrobotsim_ws/src/uros/micro_ros_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_target' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_clean_first' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_force_configure' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'ament_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.249s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_setup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/waritt/urosrobotsim_ws/build/micro_ros_setup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/waritt/urosrobotsim_ws/install/micro_ros_setup', 'merge_install': False, 'path': '/home/waritt/urosrobotsim_ws/src/micro_ros_setup', 'symlink_install': False, 'test_result_base': None}
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_target' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_clean_cache' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_clean_first' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_force_configure' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'ament_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'catkin_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.249s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_agent' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/waritt/urosrobotsim_ws/build/micro_ros_agent', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/waritt/urosrobotsim_ws/install/micro_ros_agent', 'merge_install': False, 'path': '/home/waritt/urosrobotsim_ws/src/uros/micro-ROS-Agent/micro_ros_agent', 'symlink_install': False, 'test_result_base': None}
+[0.249s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.250s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.250s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/waritt/urosrobotsim_ws/src/uros/micro_ros_msgs' with build type 'ament_cmake'
+[0.250s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/waritt/urosrobotsim_ws/src/uros/micro_ros_msgs'
+[0.251s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.251s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.255s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/waritt/urosrobotsim_ws/src/calibrate_imu' with build type 'ament_cmake'
+[0.255s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/waritt/urosrobotsim_ws/src/calibrate_imu'
+[0.255s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.255s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.258s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/waritt/urosrobotsim_ws/src/imu_interfaces' with build type 'ament_cmake'
+[0.258s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/waritt/urosrobotsim_ws/src/imu_interfaces'
+[0.258s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.259s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.262s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/waritt/urosrobotsim_ws/src/megarover_samples_ros2' with build type 'ament_cmake'
+[0.262s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/waritt/urosrobotsim_ws/src/megarover_samples_ros2'
+[0.262s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.262s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.265s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/waritt/urosrobotsim_ws/src/micro_ros_setup' with build type 'ament_cmake'
+[0.265s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/waritt/urosrobotsim_ws/src/micro_ros_setup'
+[0.265s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.265s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/micro_ros_msgs -- -j16 -l16
+[0.274s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/calibrate_imu -- -j16 -l16
+[0.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/imu_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/imu_interfaces -- -j16 -l16
+[0.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/megarover_samples_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/megarover_samples_ros2 -- -j16 -l16
+[0.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/micro_ros_setup -- -j16 -l16
+[0.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/micro_ros_setup -- -j16 -l16
+[0.333s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/megarover_samples_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/megarover_samples_ros2 -- -j16 -l16
+[0.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/micro_ros_setup
+[0.371s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_setup)
+[0.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/megarover_samples_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/megarover_samples_ros2
+[0.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/micro_ros_setup
+[0.389s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup' for CMake module files
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup' for CMake config files
+[0.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_setup', 'cmake_prefix_path')
+[0.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.ps1'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.dsv'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.sh'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/lib'
+[0.394s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/bin'
+[0.394s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/lib/pkgconfig/micro_ros_setup.pc'
+[0.394s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/lib/python3.10/site-packages'
+[0.394s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/bin'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/package.ps1'
+[0.395s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/package.dsv'
+[0.396s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/package.sh'
+[0.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/package.bash'
+[0.397s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/package.zsh'
+[0.398s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/colcon-core/packages/micro_ros_setup)
+[0.400s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(megarover_samples_ros2)
+[0.400s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2' for CMake module files
+[0.401s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/megarover_samples_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/megarover_samples_ros2
+[0.401s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2' for CMake config files
+[0.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('megarover_samples_ros2', 'cmake_prefix_path')
+[0.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/hook/cmake_prefix_path.ps1'
+[0.403s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/hook/cmake_prefix_path.dsv'
+[0.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/hook/cmake_prefix_path.sh'
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/lib'
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/bin'
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/lib/pkgconfig/megarover_samples_ros2.pc'
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/lib/python3.10/site-packages'
+[0.404s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/bin'
+[0.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/package.ps1'
+[0.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/package.dsv'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/package.sh'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/package.bash'
+[0.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/package.zsh'
+[0.406s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/colcon-core/packages/megarover_samples_ros2)
+[0.427s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_setup)
+[0.427s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup' for CMake module files
+[0.429s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup' for CMake config files
+[0.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_setup', 'cmake_prefix_path')
+[0.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.ps1'
+[0.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.dsv'
+[0.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.sh'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/lib'
+[0.431s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/bin'
+[0.432s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/lib/pkgconfig/micro_ros_setup.pc'
+[0.432s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/lib/python3.10/site-packages'
+[0.432s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/bin'
+[0.433s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/package.ps1'
+[0.433s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/package.dsv'
+[0.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/package.sh'
+[0.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/package.bash'
+[0.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/micro_ros_setup/package.zsh'
+[0.435s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/micro_ros_setup/share/colcon-core/packages/micro_ros_setup)
+[0.439s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(megarover_samples_ros2)
+[0.439s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2' for CMake module files
+[0.440s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2' for CMake config files
+[0.441s] Level 1:colcon.colcon_core.shell:create_environment_hook('megarover_samples_ros2', 'cmake_prefix_path')
+[0.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/hook/cmake_prefix_path.ps1'
+[0.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/hook/cmake_prefix_path.dsv'
+[0.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/hook/cmake_prefix_path.sh'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/lib'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/bin'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/lib/pkgconfig/megarover_samples_ros2.pc'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/lib/python3.10/site-packages'
+[0.443s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/bin'
+[0.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/package.ps1'
+[0.443s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/package.dsv'
+[0.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/package.sh'
+[0.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/package.bash'
+[0.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/megarover_samples_ros2/package.zsh'
+[0.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2/share/colcon-core/packages/megarover_samples_ros2)
+[0.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/micro_ros_msgs -- -j16 -l16
+[0.569s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/imu_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/imu_interfaces -- -j16 -l16
+[0.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/calibrate_imu -- -j16 -l16
+[0.591s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/calibrate_imu
+[0.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/imu_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/imu_interfaces
+[0.629s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(calibrate_imu)
+[0.629s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu' for CMake module files
+[0.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/calibrate_imu
+[0.632s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu' for CMake config files
+[0.632s] Level 1:colcon.colcon_core.shell:create_environment_hook('calibrate_imu', 'cmake_prefix_path')
+[0.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/hook/cmake_prefix_path.ps1'
+[0.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/hook/cmake_prefix_path.dsv'
+[0.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/hook/cmake_prefix_path.sh'
+[0.633s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu/lib'
+[0.633s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu/bin'
+[0.633s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu/lib/pkgconfig/calibrate_imu.pc'
+[0.633s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu/lib/python3.10/site-packages'
+[0.633s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu/bin'
+[0.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.ps1'
+[0.634s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.dsv'
+[0.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.sh'
+[0.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.bash'
+[0.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.zsh'
+[0.635s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/colcon-core/packages/calibrate_imu)
+[0.651s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/micro_ros_msgs
+[0.656s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(calibrate_imu)
+[0.656s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu' for CMake module files
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu' for CMake config files
+[0.657s] Level 1:colcon.colcon_core.shell:create_environment_hook('calibrate_imu', 'cmake_prefix_path')
+[0.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/hook/cmake_prefix_path.ps1'
+[0.659s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/hook/cmake_prefix_path.dsv'
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/hook/cmake_prefix_path.sh'
+[0.664s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu/lib'
+[0.664s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu/bin'
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu/lib/pkgconfig/calibrate_imu.pc'
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu/lib/python3.10/site-packages'
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/calibrate_imu/bin'
+[0.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.ps1'
+[0.666s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.dsv'
+[0.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.sh'
+[0.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.bash'
+[0.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/calibrate_imu/package.zsh'
+[0.667s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/calibrate_imu/share/colcon-core/packages/calibrate_imu)
+[0.668s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_interfaces)
+[0.668s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces' for CMake module files
+[0.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/imu_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/imu_interfaces
+[0.669s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces' for CMake config files
+[0.669s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_interfaces', 'cmake_prefix_path')
+[0.669s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/cmake_prefix_path.ps1'
+[0.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/cmake_prefix_path.dsv'
+[0.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/cmake_prefix_path.sh'
+[0.670s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces/lib'
+[0.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_interfaces', 'ld_library_path_lib')
+[0.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/ld_library_path_lib.ps1'
+[0.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/ld_library_path_lib.dsv'
+[0.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/ld_library_path_lib.sh'
+[0.671s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces/bin'
+[0.671s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces/lib/pkgconfig/imu_interfaces.pc'
+[0.672s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces/lib/python3.10/site-packages'
+[0.672s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces/bin'
+[0.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/package.ps1'
+[0.673s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/package.dsv'
+[0.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/package.sh'
+[0.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/package.bash'
+[0.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/package.zsh'
+[0.674s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/colcon-core/packages/imu_interfaces)
+[0.692s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_msgs)
+[0.692s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs' for CMake module files
+[0.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/micro_ros_msgs
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs' for CMake config files
+[0.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'cmake_prefix_path')
+[0.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.ps1'
+[0.693s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.dsv'
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.sh'
+[0.694s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib'
+[0.694s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'ld_library_path_lib')
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.ps1'
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.dsv'
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.sh'
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/bin'
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/pkgconfig/micro_ros_msgs.pc'
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/python3.10/site-packages'
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/bin'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.ps1'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv'
+[0.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.sh'
+[0.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.bash'
+[0.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.zsh'
+[0.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/colcon-core/packages/micro_ros_msgs)
+[0.726s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_interfaces)
+[0.726s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces' for CMake module files
+[0.726s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces' for CMake config files
+[0.726s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_interfaces', 'cmake_prefix_path')
+[0.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/cmake_prefix_path.ps1'
+[0.727s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/cmake_prefix_path.dsv'
+[0.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/cmake_prefix_path.sh'
+[0.727s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces/lib'
+[0.727s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_interfaces', 'ld_library_path_lib')
+[0.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/ld_library_path_lib.ps1'
+[0.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/ld_library_path_lib.dsv'
+[0.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/hook/ld_library_path_lib.sh'
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces/bin'
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces/lib/pkgconfig/imu_interfaces.pc'
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces/lib/python3.10/site-packages'
+[0.728s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/imu_interfaces/bin'
+[0.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/package.ps1'
+[0.729s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/package.dsv'
+[0.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/package.sh'
+[0.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/package.bash'
+[0.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/imu_interfaces/package.zsh'
+[0.730s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/imu_interfaces/share/colcon-core/packages/imu_interfaces)
+[0.779s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_msgs)
+[0.779s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs' for CMake module files
+[0.780s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs' for CMake config files
+[0.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'cmake_prefix_path')
+[0.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.ps1'
+[0.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.dsv'
+[0.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.sh'
+[0.781s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib'
+[0.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'ld_library_path_lib')
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.ps1'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.dsv'
+[0.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.sh'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/bin'
+[0.782s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/pkgconfig/micro_ros_msgs.pc'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/python3.10/site-packages'
+[0.783s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/bin'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.ps1'
+[0.783s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv'
+[0.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.sh'
+[0.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.bash'
+[0.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.zsh'
+[0.785s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/colcon-core/packages/micro_ros_msgs)
+[0.785s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/waritt/urosrobotsim_ws/src/uros/micro-ROS-Agent/micro_ros_agent' with build type 'ament_cmake'
+[0.785s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/waritt/urosrobotsim_ws/src/uros/micro-ROS-Agent/micro_ros_agent'
+[0.785s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.785s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/micro_ros_agent': CMAKE_PREFIX_PATH=/home/waritt/urosrobotsim_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/micro_ros_agent:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/urosrobotsim_ws/install/imu_interfaces:/home/waritt/urosrobotsim_ws/install/calibrate_imu:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/micro_ros_agent/lib:/home/waritt/uros_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/imu_interfaces/lib:/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib:/home/waritt/urosrobotsim_ws/install/imu_interfaces/lib:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/lib:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/lib:/home/waritt/ros2_ws/install/robot_sim_interfaces/lib:/home/waritt/ros2_ws/install/lab1_interfaces/lib:/home/waritt/ros2_ws/install/controller_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/micro_ros_agent -- -j16 -l16
+[0.839s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/micro_ros_agent' returned '0': CMAKE_PREFIX_PATH=/home/waritt/urosrobotsim_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/micro_ros_agent:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/urosrobotsim_ws/install/imu_interfaces:/home/waritt/urosrobotsim_ws/install/calibrate_imu:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/micro_ros_agent/lib:/home/waritt/uros_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/imu_interfaces/lib:/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib:/home/waritt/urosrobotsim_ws/install/imu_interfaces/lib:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/lib:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/lib:/home/waritt/ros2_ws/install/robot_sim_interfaces/lib:/home/waritt/ros2_ws/install/lab1_interfaces/lib:/home/waritt/ros2_ws/install/controller_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/micro_ros_agent -- -j16 -l16
+[0.868s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/waritt/urosrobotsim_ws/build/micro_ros_agent': CMAKE_PREFIX_PATH=/home/waritt/urosrobotsim_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/micro_ros_agent:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/urosrobotsim_ws/install/imu_interfaces:/home/waritt/urosrobotsim_ws/install/calibrate_imu:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/micro_ros_agent/lib:/home/waritt/uros_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/imu_interfaces/lib:/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib:/home/waritt/urosrobotsim_ws/install/imu_interfaces/lib:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/lib:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/lib:/home/waritt/ros2_ws/install/robot_sim_interfaces/lib:/home/waritt/ros2_ws/install/lab1_interfaces/lib:/home/waritt/ros2_ws/install/controller_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/micro_ros_agent
+[0.874s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_agent)
+[0.875s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent' for CMake module files
+[0.875s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/waritt/urosrobotsim_ws/build/micro_ros_agent' returned '0': CMAKE_PREFIX_PATH=/home/waritt/urosrobotsim_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/micro_ros_agent:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/urosrobotsim_ws/install/imu_interfaces:/home/waritt/urosrobotsim_ws/install/calibrate_imu:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/micro_ros_agent/lib:/home/waritt/uros_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/imu_interfaces/lib:/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib:/home/waritt/urosrobotsim_ws/install/imu_interfaces/lib:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/lib:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/lib:/home/waritt/ros2_ws/install/robot_sim_interfaces/lib:/home/waritt/ros2_ws/install/lab1_interfaces/lib:/home/waritt/ros2_ws/install/controller_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/micro_ros_agent
+[0.875s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent' for CMake config files
+[0.875s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'cmake_prefix_path')
+[0.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.ps1'
+[0.876s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.dsv'
+[0.876s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.sh'
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib'
+[0.877s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'ld_library_path_lib')
+[0.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.ps1'
+[0.877s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.dsv'
+[0.877s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.sh'
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/bin'
+[0.877s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib/pkgconfig/micro_ros_agent.pc'
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib/python3.10/site-packages'
+[0.878s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/bin'
+[0.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.ps1'
+[0.878s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv'
+[0.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.sh'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.bash'
+[0.879s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.zsh'
+[0.879s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/colcon-core/packages/micro_ros_agent)
+[0.907s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_agent)
+[0.907s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent' for CMake module files
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent' for CMake config files
+[0.908s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'cmake_prefix_path')
+[0.908s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.ps1'
+[0.909s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.dsv'
+[0.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.sh'
+[0.909s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib'
+[0.909s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'ld_library_path_lib')
+[0.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.ps1'
+[0.910s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.dsv'
+[0.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.sh'
+[0.910s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/bin'
+[0.910s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib/pkgconfig/micro_ros_agent.pc'
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib/python3.10/site-packages'
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/bin'
+[0.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.ps1'
+[0.911s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.sh'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.bash'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.zsh'
+[0.912s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/colcon-core/packages/micro_ros_agent)
+[0.913s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.913s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.913s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.913s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.917s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.917s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.917s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.924s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.925s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/waritt/urosrobotsim_ws/install/local_setup.ps1'
+[0.925s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/waritt/urosrobotsim_ws/install/_local_setup_util_ps1.py'
+[0.926s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/waritt/urosrobotsim_ws/install/setup.ps1'
+[0.927s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/waritt/urosrobotsim_ws/install/local_setup.sh'
+[0.928s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/waritt/urosrobotsim_ws/install/_local_setup_util_sh.py'
+[0.928s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/waritt/urosrobotsim_ws/install/setup.sh'
+[0.929s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/waritt/urosrobotsim_ws/install/local_setup.bash'
+[0.929s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/waritt/urosrobotsim_ws/install/setup.bash'
+[0.931s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/waritt/urosrobotsim_ws/install/local_setup.zsh'
+[0.931s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/waritt/urosrobotsim_ws/install/setup.zsh'

@@ -1,0 +1,4 @@
+Invoking command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/calibrate_imu -- -j16 -l16
+Invoked command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/waritt/urosrobotsim_ws/build/calibrate_imu -- -j16 -l16
+Invoking command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/calibrate_imu
+Invoked command in '/home/waritt/urosrobotsim_ws/build/calibrate_imu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/waritt/urosrobotsim_ws/build/calibrate_imu

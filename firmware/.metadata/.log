@@ -1,0 +1,105 @@
+!SESSION 2024-10-27 08:09:49.117 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-10-27 08:10:04.934
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-10-27 08:10:04.935
+!MESSAGE Log4j2 initialized with config file /home/waritt/urosrobotsim_ws/firmware/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-10-27 08:10:06.824
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 0 2024-10-27 08:11:54.418
+!MESSAGE STM32CubeMx project generation failure
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-27 08:12:33.432
+!MESSAGE Indexed 'megarover_joystick_uros' (21 sources, 81 headers) in 2.09 sec: 4,947 declarations; 21,263 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-27 08:16:59.509
+!MESSAGE Indexed 'megarover_joystick_uros' (21 sources, 81 headers) in 1.16 sec: 4,947 declarations; 21,263 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-27 08:17:04.309
+!MESSAGE Indexed 'megarover_joystick_uros' (21 sources, 81 headers) in 0.754 sec: 4,947 declarations; 21,263 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0076%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-27 10:43:30.232
+!MESSAGE Indexed 'megarover_joystick_uros' (47 sources, 273 headers) in 1.25 sec: 15,248 declarations; 80,650 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0021%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-27 11:13:05.055
+!MESSAGE Indexed 'STM32F401CCU6_MPU6050' (27 sources, 108 headers) in 0.725 sec: 9,072 declarations; 36,408 references; 2 unresolved inclusions; 42 syntax errors; 145 unresolved names (0.32%)
+!SESSION 2024-10-28 18:13:34.854 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-10-28 18:13:41.962
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-10-28 18:13:41.962
+!MESSAGE Log4j2 initialized with config file /home/waritt/urosrobotsim_ws/firmware/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-10-28 18:13:45.139
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-10-28 21:33:58.103 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-10-28 21:34:02.232
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-10-28 21:34:02.232
+!MESSAGE Log4j2 initialized with config file /home/waritt/urosrobotsim_ws/firmware/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-10-28 21:34:05.463
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-10-29 17:02:12.610 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-10-29 17:02:20.146
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-10-29 17:02:20.146
+!MESSAGE Log4j2 initialized with config file /home/waritt/urosrobotsim_ws/firmware/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-10-29 17:02:23.530
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-29 17:02:48.837
+!MESSAGE Indexed 'ArduinoJoyStick_uros' (46 sources, 310 headers) in 4.08 sec: 22,489 declarations; 106,805 references; 4 unresolved inclusions; 156 syntax errors; 176 unresolved names (0.14%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-10-29 18:35:06.061
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 12 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-10-29 18:35:06.061
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-10-29 18:35:06.062
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 12 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-10-29 18:35:06.062
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-10-29 18:36:28.540
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 13 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-10-29 18:36:28.541
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-10-29 18:36:28.541
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 13 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-10-29 18:36:28.541
+!MESSAGE Existing sessions are:

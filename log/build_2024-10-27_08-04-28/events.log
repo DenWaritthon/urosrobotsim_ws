@@ -1,0 +1,898 @@
+[0.000000] (-) TimerEvent: {}
+[0.000215] (-) JobUnselected: {'identifier': 'megarover_samples_ros2'}
+[0.000231] (-) JobUnselected: {'identifier': 'micro_ros_setup'}
+[0.000243] (micro_ros_msgs) JobQueued: {'identifier': 'micro_ros_msgs', 'dependencies': OrderedDict()}
+[0.000259] (micro_ros_agent) JobQueued: {'identifier': 'micro_ros_agent', 'dependencies': OrderedDict([('micro_ros_msgs', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs')])}
+[0.000392] (micro_ros_msgs) JobStarted: {'identifier': 'micro_ros_msgs'}
+[0.006595] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'cmake'}
+[0.006740] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/waritt/urosrobotsim_ws/src/uros/micro_ros_msgs', '-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli', '-DCMAKE_INSTALL_PREFIX=/home/waritt/urosrobotsim_ws/install/micro_ros_msgs'], 'cwd': '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'waritt'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/waritt/uros_ws/install/micro_ros_agent/lib:/home/waritt/uros_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/imu_interfaces/lib:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/lib:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/lib:/home/waritt/ros2_ws/install/robot_sim_interfaces/lib:/home/waritt/ros2_ws/install/lab1_interfaces/lib:/home/waritt/ros2_ws/install/controller_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/waritt'), ('OLDPWD', '/home/waritt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'th_TH.UTF-8'), ('SYSTEMD_EXEC_PID', '2529'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install:/home/waritt/uros_ws/install:/home/waritt/robotsim_ws/install:/home/waritt/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'waritt'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'waritt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/waritt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/waritt-notebook-1:@/tmp/.ICE-unix/2505,unix/waritt-notebook-1:/tmp/.ICE-unix/2505'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a8ada08_bedc_48a7_bb6d_db9eb658732c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/waritt/uros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_interfaces/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_calibration/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtle_bringup/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/tecture2/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/robot_sim_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/example_description/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/controller_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.012704] (micro_ros_msgs) StdoutLine: {'line': b'Not searching for unused variables given on the command line.\n'}
+[0.046955] (micro_ros_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.084994] (micro_ros_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.089235] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099849] (-) TimerEvent: {}
+[0.136737] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.141324] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.141402] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.141617] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.143317] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.192058] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.196544] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.196700] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.196970] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.199237] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199918] (-) TimerEvent: {}
+[0.300164] (-) TimerEvent: {}
+[0.305486] (micro_ros_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.385497] (micro_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.389547] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.395791] (micro_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.400256] (-) TimerEvent: {}
+[0.427289] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.454006] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.500429] (-) TimerEvent: {}
+[0.600683] (-) TimerEvent: {}
+[0.652400] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.700825] (-) TimerEvent: {}
+[0.790947] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.800910] (-) TimerEvent: {}
+[0.901106] (-) TimerEvent: {}
+[0.959854] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.979837] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[0.981898] (micro_ros_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.001228] (-) TimerEvent: {}
+[1.005743] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.005815] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.005860] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.005894] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.020379] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.049833] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.053298] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.055031] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.058769] (micro_ros_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.074193] (micro_ros_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.075551] (micro_ros_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/waritt/urosrobotsim_ws/build/micro_ros_msgs\n'}
+[1.079220] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[1.079577] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'build'}
+[1.080084] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs', '--', '-j16', '-l16'], 'cwd': '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'waritt'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/waritt/uros_ws/install/micro_ros_agent/lib:/home/waritt/uros_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/imu_interfaces/lib:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/lib:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/lib:/home/waritt/ros2_ws/install/robot_sim_interfaces/lib:/home/waritt/ros2_ws/install/lab1_interfaces/lib:/home/waritt/ros2_ws/install/controller_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/waritt'), ('OLDPWD', '/home/waritt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'th_TH.UTF-8'), ('SYSTEMD_EXEC_PID', '2529'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install:/home/waritt/uros_ws/install:/home/waritt/robotsim_ws/install:/home/waritt/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'waritt'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'waritt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/waritt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/waritt-notebook-1:@/tmp/.ICE-unix/2505,unix/waritt-notebook-1:/tmp/.ICE-unix/2505'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a8ada08_bedc_48a7_bb6d_db9eb658732c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/waritt/uros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_interfaces/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_calibration/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtle_bringup/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/tecture2/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/robot_sim_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/example_description/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/controller_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble')]), 'shell': False}
+[1.101291] (-) TimerEvent: {}
+[1.105514] (micro_ros_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.111997] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.116964] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_micro_ros_msgs\n'}
+[1.201453] (-) TimerEvent: {}
+[1.287609] (micro_ros_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.287963] (micro_ros_msgs) StdoutLine: {'line': b'creating micro_ros_msgs.egg-info\n'}
+[1.288068] (micro_ros_msgs) StdoutLine: {'line': b'writing micro_ros_msgs.egg-info/PKG-INFO\n'}
+[1.288124] (micro_ros_msgs) StdoutLine: {'line': b'writing dependency_links to micro_ros_msgs.egg-info/dependency_links.txt\n'}
+[1.288201] (micro_ros_msgs) StdoutLine: {'line': b'writing top-level names to micro_ros_msgs.egg-info/top_level.txt\n'}
+[1.288384] (micro_ros_msgs) StdoutLine: {'line': b"writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[1.290125] (micro_ros_msgs) StdoutLine: {'line': b"reading manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[1.290504] (micro_ros_msgs) StdoutLine: {'line': b"writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[1.301526] (-) TimerEvent: {}
+[1.307446] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_micro_ros_msgs_egg\n'}
+[1.349383] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] Built target micro_ros_msgs__cpp\n'}
+[1.356927] (micro_ros_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.357185] (micro_ros_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.357228] (micro_ros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.364124] (micro_ros_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__functions.c.o\x1b[0m\n'}
+[1.364325] (micro_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__functions.c.o\x1b[0m\n'}
+[1.364394] (micro_ros_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__functions.c.o\x1b[0m\n'}
+[1.401648] (-) TimerEvent: {}
+[1.403878] (micro_ros_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libmicro_ros_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.428949] (micro_ros_msgs) StdoutLine: {'line': b'[ 19%] Built target micro_ros_msgs__rosidl_generator_c\n'}
+[1.436194] (micro_ros_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.436386] (micro_ros_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.436434] (micro_ros_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.501769] (-) TimerEvent: {}
+[1.583391] (micro_ros_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/node__type_support.cpp.o\x1b[0m\n'}
+[1.583668] (micro_ros_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/graph__type_support.cpp.o\x1b[0m\n'}
+[1.583779] (micro_ros_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/entity__type_support.cpp.o\x1b[0m\n'}
+[1.601884] (-) TimerEvent: {}
+[1.616638] (micro_ros_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/node__type_support.cpp.o\x1b[0m\n'}
+[1.618141] (micro_ros_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/entity__type_support.cpp.o\x1b[0m\n'}
+[1.618731] (micro_ros_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/graph__type_support.cpp.o\x1b[0m\n'}
+[1.632598] (micro_ros_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/graph__type_support.cpp.o\x1b[0m\n'}
+[1.634275] (micro_ros_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/entity__type_support.cpp.o\x1b[0m\n'}
+[1.635297] (micro_ros_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/node__type_support.cpp.o\x1b[0m\n'}
+[1.701982] (-) TimerEvent: {}
+[1.733241] (micro_ros_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/graph__type_support.cpp.o\x1b[0m\n'}
+[1.736952] (micro_ros_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/node__type_support.cpp.o\x1b[0m\n'}
+[1.737328] (micro_ros_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/entity__type_support.cpp.o\x1b[0m\n'}
+[1.753142] (micro_ros_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/node__type_support.c.o\x1b[0m\n'}
+[1.753353] (micro_ros_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/graph__type_support.c.o\x1b[0m\n'}
+[1.757359] (micro_ros_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/entity__type_support.c.o\x1b[0m\n'}
+[1.778865] (micro_ros_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.802111] (-) TimerEvent: {}
+[1.804168] (micro_ros_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libmicro_ros_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.825090] (micro_ros_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/graph__type_support_c.cpp.o\x1b[0m\n'}
+[1.826907] (micro_ros_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/node__type_support_c.cpp.o\x1b[0m\n'}
+[1.827221] (micro_ros_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/entity__type_support_c.cpp.o\x1b[0m\n'}
+[1.830015] (micro_ros_msgs) StdoutLine: {'line': b'[ 68%] Built target micro_ros_msgs__rosidl_typesupport_c\n'}
+[1.845397] (micro_ros_msgs) StdoutLine: {'line': b'[ 68%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c\n'}
+[1.902230] (-) TimerEvent: {}
+[1.945341] (micro_ros_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.995644] (micro_ros_msgs) StdoutLine: {'line': b'[ 70%] Built target micro_ros_msgs__rosidl_typesupport_cpp\n'}
+[2.002340] (-) TimerEvent: {}
+[2.102653] (-) TimerEvent: {}
+[2.113124] (micro_ros_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.119167] (micro_ros_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.164896] (micro_ros_msgs) StdoutLine: {'line': b'[ 74%] Built target micro_ros_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.167686] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.167904] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.202799] (-) TimerEvent: {}
+[2.210778] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.225182] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs\n'}
+[2.247078] (micro_ros_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.302932] (-) TimerEvent: {}
+[2.403170] (-) TimerEvent: {}
+[2.503398] (-) TimerEvent: {}
+[2.575540] (micro_ros_msgs) StdoutLine: {'line': b'[ 78%] Built target micro_ros_msgs__py\n'}
+[2.588299] (micro_ros_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c.o\x1b[0m\n'}
+[2.588467] (micro_ros_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_node_s.c.o\x1b[0m\n'}
+[2.588528] (micro_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c.o\x1b[0m\n'}
+[2.603486] (-) TimerEvent: {}
+[2.667462] (micro_ros_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[2.692063] (micro_ros_msgs) StdoutLine: {'line': b'[ 87%] Built target micro_ros_msgs__rosidl_generator_py\n'}
+[2.703601] (-) TimerEvent: {}
+[2.704664] (micro_ros_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.704799] (micro_ros_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.704937] (micro_ros_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.763956] (micro_ros_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.764110] (micro_ros_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.764224] (micro_ros_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.785030] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[2.785179] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_c__pyext\n'}
+[2.785220] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.792732] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[2.803689] (-) TimerEvent: {}
+[2.904053] (-) TimerEvent: {}
+[3.004598] (-) TimerEvent: {}
+[3.094049] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'install'}
+[3.104744] (-) TimerEvent: {}
+[3.116876] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs'], 'cwd': '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'waritt'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/waritt/uros_ws/install/micro_ros_agent/lib:/home/waritt/uros_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/imu_interfaces/lib:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/lib:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/lib:/home/waritt/ros2_ws/install/robot_sim_interfaces/lib:/home/waritt/ros2_ws/install/lab1_interfaces/lib:/home/waritt/ros2_ws/install/controller_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/waritt'), ('OLDPWD', '/home/waritt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'th_TH.UTF-8'), ('SYSTEMD_EXEC_PID', '2529'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install:/home/waritt/uros_ws/install:/home/waritt/robotsim_ws/install:/home/waritt/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'waritt'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'waritt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/waritt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/waritt-notebook-1:@/tmp/.ICE-unix/2505,unix/waritt-notebook-1:/tmp/.ICE-unix/2505'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a8ada08_bedc_48a7_bb6d_db9eb658732c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/waritt/urosrobotsim_ws/build/micro_ros_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/waritt/uros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_interfaces/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_calibration/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtle_bringup/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/tecture2/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/robot_sim_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/example_description/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/controller_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble')]), 'shell': False}
+[3.131932] (micro_ros_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.132240] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/micro_ros_msgs\n'}
+[3.132533] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[3.132900] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[3.133135] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.133267] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.h\n'}
+[3.133504] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.h\n'}
+[3.133604] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.h\n'}
+[3.133698] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[3.133793] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.h\n'}
+[3.133892] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.h\n'}
+[3.134064] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.h\n'}
+[3.134165] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.h\n'}
+[3.134269] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.h\n'}
+[3.134379] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.c\n'}
+[3.134473] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.h\n'}
+[3.134632] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.h\n'}
+[3.134769] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.h\n'}
+[3.134868] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.c\n'}
+[3.134961] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.h\n'}
+[3.135057] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.c\n'}
+[3.135152] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.sh\n'}
+[3.135206] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.dsv\n'}
+[3.135287] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so\n'}
+[3.135536] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so" to ""\n'}
+[3.135626] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[3.135683] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[3.135771] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.135825] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[3.135897] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_c.h\n'}
+[3.135954] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_c.h\n'}
+[3.136039] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_c.h\n'}
+[3.136095] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.136278] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.136379] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[3.136440] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[3.136533] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[3.136588] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.c\n'}
+[3.136644] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_c.h\n'}
+[3.136724] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_c.h\n'}
+[3.136781] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.c\n'}
+[3.136939] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.c\n'}
+[3.137050] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_c.h\n'}
+[3.137111] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.137219] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.137389] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.137445] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so\n'}
+[3.137674] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so" to ""\n'}
+[3.137740] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[3.137793] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[3.137895] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.hpp\n'}
+[3.137946] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.hpp\n'}
+[3.138054] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.hpp\n'}
+[3.138113] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[3.138208] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.hpp\n'}
+[3.138276] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__builder.hpp\n'}
+[3.138335] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.hpp\n'}
+[3.138389] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.hpp\n'}
+[3.138481] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__traits.hpp\n'}
+[3.138534] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__builder.hpp\n'}
+[3.138587] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__traits.hpp\n'}
+[3.138660] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__builder.hpp\n'}
+[3.138715] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__traits.hpp\n'}
+[3.138795] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[3.138892] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[3.138948] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.139008] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[3.139063] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/dds_fastrtps\n'}
+[3.139116] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.139192] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.139223] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.139257] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.139456] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.139488] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[3.139520] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[3.139551] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[3.139583] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.cpp\n'}
+[3.139626] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.cpp\n'}
+[3.139679] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.139710] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.139752] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.139782] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.cpp\n'}
+[3.139812] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.139930] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.139973] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so\n'}
+[3.140086] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[3.140129] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.sh\n'}
+[3.140173] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.dsv\n'}
+[3.140217] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info\n'}
+[3.140306] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[3.140353] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/top_level.txt\n'}
+[3.140403] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/PKG-INFO\n'}
+[3.140446] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[3.140498] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs\n'}
+[3.140540] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.140581] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.140628] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/__init__.py\n'}
+[3.140671] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.140723] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so\n'}
+[3.140771] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.140821] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.140870] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.140914] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg\n'}
+[3.140953] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph.py\n'}
+[3.140994] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node.py\n'}
+[3.141040] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/__init__.py\n'}
+[3.141081] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph_s.c\n'}
+[3.141122] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node_s.c\n'}
+[3.141166] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity.py\n'}
+[3.141208] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity_s.c\n'}
+[3.180887] (micro_ros_msgs) StdoutLine: {'line': b"Listing '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs'...\n"}
+[3.180955] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/__init__.py'...\n"}
+[3.180990] (micro_ros_msgs) StdoutLine: {'line': b"Listing '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg'...\n"}
+[3.181025] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/__init__.py'...\n"}
+[3.181055] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity.py'...\n"}
+[3.181084] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph.py'...\n"}
+[3.181114] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node.py'...\n"}
+[3.183563] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.183713] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.183792] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.183832] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.183887] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.183945] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.184011] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so\n'}
+[3.184112] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so" to ""\n'}
+[3.184160] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.idl\n'}
+[3.184216] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.idl\n'}
+[3.184275] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.idl\n'}
+[3.184356] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.msg\n'}
+[3.184497] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.msg\n'}
+[3.184540] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.msg\n'}
+[3.184570] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/ament_index/resource_index/package_run_dependencies/micro_ros_msgs\n'}
+[3.184632] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/ament_index/resource_index/parent_prefix_path/micro_ros_msgs\n'}
+[3.184679] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.sh\n'}
+[3.184723] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.dsv\n'}
+[3.184767] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.sh\n'}
+[3.184809] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.dsv\n'}
+[3.184861] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.bash\n'}
+[3.184915] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.sh\n'}
+[3.184970] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.zsh\n'}
+[3.185024] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.dsv\n'}
+[3.185074] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv\n'}
+[3.185145] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/ament_index/resource_index/packages/micro_ros_msgs\n'}
+[3.185221] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport.cmake\n'}
+[3.185289] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.185364] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.185431] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.185493] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.185551] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.185612] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.185668] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.185729] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.185790] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.185846] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.185907] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.185966] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.186026] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.186086] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.186147] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.186204] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.186261] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.186323] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.186384] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.186441] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.186494] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.186550] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.186611] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.186667] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig.cmake\n'}
+[3.186713] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig-version.cmake\n'}
+[3.186767] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.xml\n'}
+[3.188277] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[3.204808] (-) TimerEvent: {}
+[3.275850] (micro_ros_msgs) JobEnded: {'identifier': 'micro_ros_msgs', 'rc': 0}
+[3.276172] (micro_ros_agent) JobStarted: {'identifier': 'micro_ros_agent'}
+[3.282396] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'cmake'}
+[3.282497] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '/home/waritt/urosrobotsim_ws/src/uros/micro-ROS-Agent/micro_ros_agent', '-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli', '-DCMAKE_INSTALL_PREFIX=/home/waritt/urosrobotsim_ws/install/micro_ros_agent'], 'cwd': '/home/waritt/urosrobotsim_ws/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'waritt'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/micro_ros_agent/lib:/home/waritt/uros_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/imu_interfaces/lib:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/lib:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/lib:/home/waritt/ros2_ws/install/robot_sim_interfaces/lib:/home/waritt/ros2_ws/install/lab1_interfaces/lib:/home/waritt/ros2_ws/install/controller_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/waritt'), ('OLDPWD', '/home/waritt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'th_TH.UTF-8'), ('SYSTEMD_EXEC_PID', '2529'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install:/home/waritt/uros_ws/install:/home/waritt/robotsim_ws/install:/home/waritt/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'waritt'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'waritt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/waritt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/waritt-notebook-1:@/tmp/.ICE-unix/2505,unix/waritt-notebook-1:/tmp/.ICE-unix/2505'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a8ada08_bedc_48a7_bb6d_db9eb658732c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs:/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/waritt/urosrobotsim_ws/build/micro_ros_agent'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_interfaces/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_calibration/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtle_bringup/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/tecture2/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/robot_sim_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/example_description/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/controller_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs:/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble')]), 'shell': False}
+[3.287611] (micro_ros_agent) StdoutLine: {'line': b'Not searching for unused variables given on the command line.\n'}
+[3.304909] (-) TimerEvent: {}
+[3.320679] (micro_ros_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.324713] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.368235] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.372995] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.373112] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.373435] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.405002] (-) TimerEvent: {}
+[3.406408] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.410621] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.462279] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.467031] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.467134] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.467519] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.489469] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.491257] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[3.491628] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/waritt/urosrobotsim_ws/build/micro_ros_agent\n'}
+[3.494601] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[3.495026] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'build'}
+[3.495042] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/waritt/urosrobotsim_ws/build/micro_ros_agent', '--', '-j16', '-l16'], 'cwd': '/home/waritt/urosrobotsim_ws/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'waritt'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/micro_ros_agent/lib:/home/waritt/uros_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/imu_interfaces/lib:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/lib:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/lib:/home/waritt/ros2_ws/install/robot_sim_interfaces/lib:/home/waritt/ros2_ws/install/lab1_interfaces/lib:/home/waritt/ros2_ws/install/controller_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/waritt'), ('OLDPWD', '/home/waritt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'th_TH.UTF-8'), ('SYSTEMD_EXEC_PID', '2529'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install:/home/waritt/uros_ws/install:/home/waritt/robotsim_ws/install:/home/waritt/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'waritt'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'waritt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/waritt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/waritt-notebook-1:@/tmp/.ICE-unix/2505,unix/waritt-notebook-1:/tmp/.ICE-unix/2505'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a8ada08_bedc_48a7_bb6d_db9eb658732c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs:/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/waritt/urosrobotsim_ws/build/micro_ros_agent'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_interfaces/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_calibration/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtle_bringup/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/tecture2/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/robot_sim_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/example_description/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/controller_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs:/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble')]), 'shell': False}
+[3.505087] (-) TimerEvent: {}
+[3.523884] (micro_ros_agent) StdoutLine: {'line': b"[  6%] \x1b[34m\x1b[1mCreating directories for 'xrceagent'\x1b[0m\n"}
+[3.563123] (micro_ros_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mPerforming download step (git clone) for 'xrceagent'\x1b[0m\n"}
+[3.574884] (micro_ros_agent) StderrLine: {'line': b"Cloning into 'xrceagent'...\n"}
+[3.605401] (-) TimerEvent: {}
+[3.705972] (-) TimerEvent: {}
+[3.806330] (-) TimerEvent: {}
+[3.906904] (-) TimerEvent: {}
+[4.007471] (-) TimerEvent: {}
+[4.107998] (-) TimerEvent: {}
+[4.208351] (-) TimerEvent: {}
+[4.308915] (-) TimerEvent: {}
+[4.409554] (-) TimerEvent: {}
+[4.510122] (-) TimerEvent: {}
+[4.610447] (-) TimerEvent: {}
+[4.711101] (-) TimerEvent: {}
+[4.811620] (-) TimerEvent: {}
+[4.911927] (-) TimerEvent: {}
+[5.012270] (-) TimerEvent: {}
+[5.112531] (-) TimerEvent: {}
+[5.212840] (-) TimerEvent: {}
+[5.313109] (-) TimerEvent: {}
+[5.413494] (-) TimerEvent: {}
+[5.513870] (-) TimerEvent: {}
+[5.614448] (-) TimerEvent: {}
+[5.714715] (-) TimerEvent: {}
+[5.814975] (-) TimerEvent: {}
+[5.915248] (-) TimerEvent: {}
+[6.015501] (-) TimerEvent: {}
+[6.115793] (-) TimerEvent: {}
+[6.216173] (-) TimerEvent: {}
+[6.316805] (-) TimerEvent: {}
+[6.417568] (-) TimerEvent: {}
+[6.518167] (-) TimerEvent: {}
+[6.618906] (-) TimerEvent: {}
+[6.719514] (-) TimerEvent: {}
+[6.820147] (-) TimerEvent: {}
+[6.864600] (micro_ros_agent) StdoutLine: {'line': b"Branch 'ros2' set up to track remote branch 'ros2' from 'origin'.\n"}
+[6.864733] (micro_ros_agent) StderrLine: {'line': b"Switched to a new branch 'ros2'\n"}
+[6.914791] (micro_ros_agent) StdoutLine: {'line': b"[ 18%] \x1b[34m\x1b[1mPerforming update step for 'xrceagent'\x1b[0m\n"}
+[6.920258] (-) TimerEvent: {}
+[7.020593] (-) TimerEvent: {}
+[7.120859] (-) TimerEvent: {}
+[7.221136] (-) TimerEvent: {}
+[7.321413] (-) TimerEvent: {}
+[7.421701] (-) TimerEvent: {}
+[7.521980] (-) TimerEvent: {}
+[7.622255] (-) TimerEvent: {}
+[7.722577] (-) TimerEvent: {}
+[7.758774] (micro_ros_agent) StderrLine: {'line': b'HEAD is now at c25243c Enable Domain Override on Reference and XML Participant (#351)\n'}
+[7.782937] (micro_ros_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo patch step for 'xrceagent'\x1b[0m\n"}
+[7.799085] (micro_ros_agent) StdoutLine: {'line': b"[ 31%] \x1b[34m\x1b[1mPerforming configure step for 'xrceagent'\x1b[0m\n"}
+[7.804797] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/waritt/urosrobotsim_ws/build/micro_ros_agent/agent/tmp/xrceagent-cache-.cmake\n'}
+[7.822652] (-) TimerEvent: {}
+[7.844681] (micro_ros_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[7.849191] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[7.922763] (-) TimerEvent: {}
+[7.924623] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.929591] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.929770] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.930193] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.974861] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[7.978867] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[8.022864] (-) TimerEvent: {}
+[8.034694] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[8.039432] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[8.039538] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[8.039850] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[8.044813] (micro_ros_agent) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.092483] (micro_ros_agent) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.092615] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.122981] (-) TimerEvent: {}
+[8.142927] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.143710] (micro_ros_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.157385] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.158928] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[8.159510] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/waritt/urosrobotsim_ws/build/micro_ros_agent/agent/src/xrceagent-build\n'}
+[8.174720] (micro_ros_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mPerforming build step for 'xrceagent'\x1b[0m\n"}
+[8.200880] (micro_ros_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mCreating directories for 'uagent'\x1b[0m\n"}
+[8.223111] (-) TimerEvent: {}
+[8.244031] (micro_ros_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo download step for 'uagent'\x1b[0m\n"}
+[8.259699] (micro_ros_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mNo update step for 'uagent'\x1b[0m\n"}
+[8.275195] (micro_ros_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mNo patch step for 'uagent'\x1b[0m\n"}
+[8.289626] (micro_ros_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mPerforming configure step for 'uagent'\x1b[0m\n"}
+[8.294857] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/waritt/urosrobotsim_ws/build/micro_ros_agent/agent/src/xrceagent-build/uagent-prefix/tmp/uagent-cache-.cmake\n'}
+[8.298169] (micro_ros_agent) StdoutLine: {'line': b"-- Setting build type to 'Release' as none was specified.\n"}
+[8.323216] (-) TimerEvent: {}
+[8.332651] (micro_ros_agent) StdoutLine: {'line': b'-- Found tinyxml2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  \n'}
+[8.332840] (micro_ros_agent) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[8.332909] (micro_ros_agent) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (tinyxml2)\n'}
+[8.332960] (micro_ros_agent) StderrLine: {'line': b'  does not match the name of the calling package (TinyXML2).  This can lead\n'}
+[8.333023] (micro_ros_agent) StderrLine: {'line': b'  to problems in calling code that expects `find_package` result variables\n'}
+[8.333081] (micro_ros_agent) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[8.333147] (micro_ros_agent) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[8.333198] (micro_ros_agent) StderrLine: {'line': b'  cmake/modules/FindTinyXML2.cmake:40 (find_package_handle_standard_args)\n'}
+[8.333255] (micro_ros_agent) StderrLine: {'line': b'  /opt/ros/humble/share/fastrtps/cmake/fastrtps-config.cmake:51 (find_package)\n'}
+[8.333321] (micro_ros_agent) StderrLine: {'line': b'  CMakeLists.txt:153 (find_package)\n'}
+[8.333363] (micro_ros_agent) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[8.333398] (micro_ros_agent) StderrLine: {'line': b'\x1b[0m\n'}
+[8.369564] (micro_ros_agent) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[8.375017] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.380985] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[8.381460] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/waritt/urosrobotsim_ws/build/micro_ros_agent/agent/src/xrceagent-build\n'}
+[8.394798] (micro_ros_agent) StdoutLine: {'line': b"[ 75%] \x1b[34m\x1b[1mPerforming build step for 'uagent'\x1b[0m\n"}
+[8.425338] (-) TimerEvent: {}
+[8.426562] (micro_ros_agent) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/AgentInstance.cpp.o\x1b[0m\n'}
+[8.426802] (micro_ros_agent) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Agent.cpp.o\x1b[0m\n'}
+[8.426925] (micro_ros_agent) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Root.cpp.o\x1b[0m\n'}
+[8.427016] (micro_ros_agent) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/processor/Processor.cpp.o\x1b[0m\n'}
+[8.427079] (micro_ros_agent) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/client/ProxyClient.cpp.o\x1b[0m\n'}
+[8.427146] (micro_ros_agent) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/topic/Topic.cpp.o\x1b[0m\n'}
+[8.427203] (micro_ros_agent) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/participant/Participant.cpp.o\x1b[0m\n'}
+[8.427337] (micro_ros_agent) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/publisher/Publisher.cpp.o\x1b[0m\n'}
+[8.427466] (micro_ros_agent) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/subscriber/Subscriber.cpp.o\x1b[0m\n'}
+[8.427523] (micro_ros_agent) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datawriter/DataWriter.cpp.o\x1b[0m\n'}
+[8.427580] (micro_ros_agent) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/requester/Requester.cpp.o\x1b[0m\n'}
+[8.427631] (micro_ros_agent) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datareader/DataReader.cpp.o\x1b[0m\n'}
+[8.427713] (micro_ros_agent) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/replier/Replier.cpp.o\x1b[0m\n'}
+[8.427783] (micro_ros_agent) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/object/XRCEObject.cpp.o\x1b[0m\n'}
+[8.428442] (micro_ros_agent) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/XRCETypes.cpp.o\x1b[0m\n'}
+[8.432437] (micro_ros_agent) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/MessageHeader.cpp.o\x1b[0m\n'}
+[8.528389] (-) TimerEvent: {}
+[8.631039] (-) TimerEvent: {}
+[8.731446] (-) TimerEvent: {}
+[8.835500] (-) TimerEvent: {}
+[8.935905] (-) TimerEvent: {}
+[9.036344] (-) TimerEvent: {}
+[9.118083] (micro_ros_agent) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/SubMessageHeader.cpp.o\x1b[0m\n'}
+[9.136497] (-) TimerEvent: {}
+[9.139236] (micro_ros_agent) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/InputMessage.cpp.o\x1b[0m\n'}
+[9.236622] (-) TimerEvent: {}
+[9.337108] (-) TimerEvent: {}
+[9.437502] (-) TimerEvent: {}
+[9.540340] (-) TimerEvent: {}
+[9.640722] (-) TimerEvent: {}
+[9.741124] (-) TimerEvent: {}
+[9.800093] (micro_ros_agent) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/OutputMessage.cpp.o\x1b[0m\n'}
+[9.841282] (-) TimerEvent: {}
+[9.942329] (-) TimerEvent: {}
+[9.976087] (micro_ros_agent) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/Server.cpp.o\x1b[0m\n'}
+[9.979144] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/utils/ArgumentParser.cpp.o\x1b[0m\n'}
+[10.022406] (micro_ros_agent) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp.o\x1b[0m\n'}
+[10.042449] (-) TimerEvent: {}
+[10.078487] (micro_ros_agent) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/custom/CustomAgent.cpp.o\x1b[0m\n'}
+[10.142582] (-) TimerEvent: {}
+[10.242934] (-) TimerEvent: {}
+[10.343300] (-) TimerEvent: {}
+[10.357156] (micro_ros_agent) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv4AgentLinux.cpp.o\x1b[0m\n'}
+[10.445345] (-) TimerEvent: {}
+[10.545837] (-) TimerEvent: {}
+[10.646243] (-) TimerEvent: {}
+[10.746605] (-) TimerEvent: {}
+[10.846948] (-) TimerEvent: {}
+[10.949361] (-) TimerEvent: {}
+[11.049764] (-) TimerEvent: {}
+[11.150191] (-) TimerEvent: {}
+[11.250570] (-) TimerEvent: {}
+[11.351043] (-) TimerEvent: {}
+[11.451446] (-) TimerEvent: {}
+[11.555574] (-) TimerEvent: {}
+[11.655985] (-) TimerEvent: {}
+[11.756423] (-) TimerEvent: {}
+[11.856829] (-) TimerEvent: {}
+[11.957290] (-) TimerEvent: {}
+[12.057733] (-) TimerEvent: {}
+[12.158159] (-) TimerEvent: {}
+[12.258527] (-) TimerEvent: {}
+[12.358905] (-) TimerEvent: {}
+[12.403348] (micro_ros_agent) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv6AgentLinux.cpp.o\x1b[0m\n'}
+[12.459026] (-) TimerEvent: {}
+[12.559357] (-) TimerEvent: {}
+[12.663533] (-) TimerEvent: {}
+[12.763956] (-) TimerEvent: {}
+[12.864348] (-) TimerEvent: {}
+[12.964925] (-) TimerEvent: {}
+[13.066571] (-) TimerEvent: {}
+[13.168584] (-) TimerEvent: {}
+[13.273025] (-) TimerEvent: {}
+[13.290923] (micro_ros_agent) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv4AgentLinux.cpp.o\x1b[0m\n'}
+[13.373149] (-) TimerEvent: {}
+[13.393356] (micro_ros_agent) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv6AgentLinux.cpp.o\x1b[0m\n'}
+[13.473312] (-) TimerEvent: {}
+[13.569459] (micro_ros_agent) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/SerialAgentLinux.cpp.o\x1b[0m\n'}
+[13.574014] (-) TimerEvent: {}
+[13.578334] (micro_ros_agent) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/TermiosAgentLinux.cpp.o\x1b[0m\n'}
+[13.578535] (micro_ros_agent) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiSerialAgentLinux.cpp.o\x1b[0m\n'}
+[13.674147] (-) TimerEvent: {}
+[13.774594] (-) TimerEvent: {}
+[13.875125] (-) TimerEvent: {}
+[13.903565] (micro_ros_agent) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiTermiosAgentLinux.cpp.o\x1b[0m\n'}
+[13.975245] (-) TimerEvent: {}
+[14.037429] (micro_ros_agent) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/PseudoTerminalAgentLinux.cpp.o\x1b[0m\n'}
+[14.075348] (-) TimerEvent: {}
+[14.178366] (-) TimerEvent: {}
+[14.278801] (-) TimerEvent: {}
+[14.379223] (-) TimerEvent: {}
+[14.479607] (-) TimerEvent: {}
+[14.580004] (-) TimerEvent: {}
+[14.680333] (-) TimerEvent: {}
+[14.780663] (-) TimerEvent: {}
+[14.844460] (micro_ros_agent) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/can/CanAgentLinux.cpp.o\x1b[0m\n'}
+[14.881345] (-) TimerEvent: {}
+[14.984347] (-) TimerEvent: {}
+[15.084737] (-) TimerEvent: {}
+[15.185104] (-) TimerEvent: {}
+[15.285634] (-) TimerEvent: {}
+[15.386024] (-) TimerEvent: {}
+[15.486478] (-) TimerEvent: {}
+[15.588477] (-) TimerEvent: {}
+[15.688869] (-) TimerEvent: {}
+[15.696531] (micro_ros_agent) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServerLinux.cpp.o\x1b[0m\n'}
+[15.788986] (-) TimerEvent: {}
+[15.881551] (micro_ros_agent) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServer.cpp.o\x1b[0m\n'}
+[15.889112] (-) TimerEvent: {}
+[15.990350] (-) TimerEvent: {}
+[16.044832] (micro_ros_agent) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/TopicPubSubType.cpp.o\x1b[0m\n'}
+[16.091352] (-) TimerEvent: {}
+[16.191752] (-) TimerEvent: {}
+[16.292130] (-) TimerEvent: {}
+[16.395652] (-) TimerEvent: {}
+[16.495989] (-) TimerEvent: {}
+[16.596362] (-) TimerEvent: {}
+[16.696723] (-) TimerEvent: {}
+[16.797091] (-) TimerEvent: {}
+[16.847176] (micro_ros_agent) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/xmlobjects/xmlobjects.cpp.o\x1b[0m\n'}
+[16.897208] (-) TimerEvent: {}
+[16.997567] (-) TimerEvent: {}
+[17.097988] (-) TimerEvent: {}
+[17.200174] (-) TimerEvent: {}
+[17.300581] (-) TimerEvent: {}
+[17.350553] (micro_ros_agent) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastEntities.cpp.o\x1b[0m\n'}
+[17.400937] (-) TimerEvent: {}
+[17.503380] (-) TimerEvent: {}
+[17.603815] (-) TimerEvent: {}
+[17.704165] (-) TimerEvent: {}
+[17.804575] (-) TimerEvent: {}
+[17.905073] (-) TimerEvent: {}
+[18.006512] (-) TimerEvent: {}
+[18.020037] (micro_ros_agent) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastMiddleware.cpp.o\x1b[0m\n'}
+[18.020349] (micro_ros_agent) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSEntities.cpp.o\x1b[0m\n'}
+[18.062326] (micro_ros_agent) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSMiddleware.cpp.o\x1b[0m\n'}
+[18.106664] (-) TimerEvent: {}
+[18.207234] (-) TimerEvent: {}
+[18.308385] (-) TimerEvent: {}
+[18.408821] (-) TimerEvent: {}
+[18.509212] (-) TimerEvent: {}
+[18.609586] (-) TimerEvent: {}
+[18.709990] (-) TimerEvent: {}
+[18.810451] (-) TimerEvent: {}
+[18.911438] (-) TimerEvent: {}
+[19.011871] (-) TimerEvent: {}
+[19.112216] (-) TimerEvent: {}
+[19.212568] (-) TimerEvent: {}
+[19.312933] (-) TimerEvent: {}
+[19.413388] (-) TimerEvent: {}
+[19.513667] (-) TimerEvent: {}
+[19.614057] (-) TimerEvent: {}
+[19.714329] (-) TimerEvent: {}
+[19.814656] (-) TimerEvent: {}
+[19.914923] (-) TimerEvent: {}
+[20.015186] (-) TimerEvent: {}
+[20.115494] (-) TimerEvent: {}
+[20.215939] (-) TimerEvent: {}
+[20.316312] (-) TimerEvent: {}
+[20.416676] (-) TimerEvent: {}
+[20.517003] (-) TimerEvent: {}
+[20.617346] (-) TimerEvent: {}
+[20.717677] (-) TimerEvent: {}
+[20.817973] (-) TimerEvent: {}
+[20.918439] (-) TimerEvent: {}
+[21.018761] (-) TimerEvent: {}
+[21.119029] (-) TimerEvent: {}
+[21.219322] (-) TimerEvent: {}
+[21.319651] (-) TimerEvent: {}
+[21.419955] (-) TimerEvent: {}
+[21.520290] (-) TimerEvent: {}
+[21.620613] (-) TimerEvent: {}
+[21.720898] (-) TimerEvent: {}
+[21.821160] (-) TimerEvent: {}
+[21.921475] (-) TimerEvent: {}
+[22.021742] (-) TimerEvent: {}
+[22.122003] (-) TimerEvent: {}
+[22.222265] (-) TimerEvent: {}
+[22.322524] (-) TimerEvent: {}
+[22.422784] (-) TimerEvent: {}
+[22.523095] (-) TimerEvent: {}
+[22.623349] (-) TimerEvent: {}
+[22.723583] (-) TimerEvent: {}
+[22.823847] (-) TimerEvent: {}
+[22.924100] (-) TimerEvent: {}
+[23.024390] (-) TimerEvent: {}
+[23.124642] (-) TimerEvent: {}
+[23.224899] (-) TimerEvent: {}
+[23.325165] (-) TimerEvent: {}
+[23.425443] (-) TimerEvent: {}
+[23.525749] (-) TimerEvent: {}
+[23.626065] (-) TimerEvent: {}
+[23.726358] (-) TimerEvent: {}
+[23.820840] (micro_ros_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmicroxrcedds_agent.so\x1b[0m\n'}
+[23.826513] (-) TimerEvent: {}
+[23.926770] (-) TimerEvent: {}
+[24.010986] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target microxrcedds_agent\n'}
+[24.026931] (-) TimerEvent: {}
+[24.030592] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mNo install step for 'uagent'\x1b[0m\n"}
+[24.045330] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mCompleted 'uagent'\x1b[0m\n"}
+[24.064640] (micro_ros_agent) StdoutLine: {'line': b'Built target uagent\n'}
+[24.080553] (micro_ros_agent) StdoutLine: {'line': b"[ 43%] \x1b[34m\x1b[1mPerforming install step for 'xrceagent'\x1b[0m\n"}
+[24.108153] (micro_ros_agent) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target microxrcedds_agent\x1b[0m\n'}
+[24.127026] (-) TimerEvent: {}
+[24.137667] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target microxrcedds_agent\n'}
+[24.149197] (micro_ros_agent) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[24.154648] (micro_ros_agent) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[24.154770] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.1\n'}
+[24.156224] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4\n'}
+[24.156344] (micro_ros_agent) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.1" to ""\n'}
+[24.156407] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so\n'}
+[24.156451] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent\n'}
+[24.156512] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/requester\n'}
+[24.156562] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/requester/Requester.hpp\n'}
+[24.156602] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/datawriter\n'}
+[24.156633] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/datawriter/DataWriter.hpp\n'}
+[24.156665] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/reader\n'}
+[24.156696] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/reader/Reader.hpp\n'}
+[24.156755] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/processor\n'}
+[24.156796] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/processor/Processor.hpp\n'}
+[24.156826] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/publisher\n'}
+[24.156858] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/publisher/Publisher.hpp\n'}
+[24.156890] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/object\n'}
+[24.156920] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/object/XRCEObject.hpp\n'}
+[24.156973] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/AgentInstance.hpp\n'}
+[24.157007] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport\n'}
+[24.157038] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/Server.hpp\n'}
+[24.157069] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery\n'}
+[24.157100] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerLinux.hpp\n'}
+[24.157151] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerWindows.hpp\n'}
+[24.157184] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServer.hpp\n'}
+[24.157216] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/TransportRc.hpp\n'}
+[24.157248] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/serial\n'}
+[24.157315] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/SerialAgentLinux.hpp\n'}
+[24.157351] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiTermiosAgentLinux.hpp\n'}
+[24.157385] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiSerialAgentLinux.hpp\n'}
+[24.157441] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/TermiosAgentLinux.hpp\n'}
+[24.157477] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/PseudoTerminalAgentLinux.hpp\n'}
+[24.157508] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/baud_rate_table_linux.h\n'}
+[24.157556] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/SessionManager.hpp\n'}
+[24.157599] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/custom\n'}
+[24.157630] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/custom/CustomAgent.hpp\n'}
+[24.157661] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/udp\n'}
+[24.157708] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentWindows.hpp\n'}
+[24.157741] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentLinux.hpp\n'}
+[24.157773] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentWindows.hpp\n'}
+[24.157821] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentLinux.hpp\n'}
+[24.157854] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/can\n'}
+[24.157897] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/can/CanAgentLinux.hpp\n'}
+[24.157929] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint\n'}
+[24.157961] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/MultiSerialEndPoint.hpp\n'}
+[24.158010] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv6EndPoint.hpp\n'}
+[24.158041] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv4EndPoint.hpp\n'}
+[24.158073] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CustomEndPoint.hpp\n'}
+[24.158120] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CanEndPoint.hpp\n'}
+[24.158153] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/SerialEndPoint.hpp\n'}
+[24.158202] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/util\n'}
+[24.158235] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceWindows.hpp\n'}
+[24.158272] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceLinux.hpp\n'}
+[24.158335] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p\n'}
+[24.158376] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscoverer.hpp\n'}
+[24.158430] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscovererLinux.hpp\n'}
+[24.158461] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing\n'}
+[24.158498] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp\n'}
+[24.158563] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp\n'}
+[24.158618] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPConnection.hpp\n'}
+[24.158653] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentWindows.hpp\n'}
+[24.158685] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentLinux.hpp\n'}
+[24.158730] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentLinux.hpp\n'}
+[24.158792] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentWindows.hpp\n'}
+[24.158827] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPServerBase.hpp\n'}
+[24.158860] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/utils\n'}
+[24.158911] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/utils/ArgumentParser.hpp\n'}
+[24.158946] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/utils/TokenBucket.hpp\n'}
+[24.158997] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/utils/Color.hpp\n'}
+[24.159032] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/utils/SeqNum.hpp\n'}
+[24.159079] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/utils/Functions.hpp\n'}
+[24.159114] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutexPriority.hpp\n'}
+[24.159161] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/utils/Conversion.hpp\n'}
+[24.159215] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutex.hpp\n'}
+[24.159260] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/utils/Time.hpp\n'}
+[24.159299] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/types\n'}
+[24.159345] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/types/TopicPubSubType.hpp\n'}
+[24.159391] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/types/XRCETypes.hpp\n'}
+[24.159531] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/types/Optional.hpp\n'}
+[24.159580] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/types/SubMessageHeader.hpp\n'}
+[24.159627] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/types/MessageHeader.hpp\n'}
+[24.159674] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/client\n'}
+[24.159717] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/client/ProxyClient.hpp\n'}
+[24.159761] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/client/session\n'}
+[24.159805] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/client/session/SessionInfo.hpp\n'}
+[24.159847] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/client/session/Session.hpp\n'}
+[24.159890] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream\n'}
+[24.159935] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/InputStream.hpp\n'}
+[24.159981] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/OutputStream.hpp\n'}
+[24.160033] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/participant\n'}
+[24.160077] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/participant/Participant.hpp\n'}
+[24.160117] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/Agent.hpp\n'}
+[24.160160] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/datareader\n'}
+[24.160206] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/datareader/DataReader.hpp\n'}
+[24.160257] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/logger\n'}
+[24.160292] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/logger/Logger.hpp\n'}
+[24.160348] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware\n'}
+[24.160382] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/Middleware.hpp\n'}
+[24.160435] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds\n'}
+[24.160485] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSEntities.hpp\n'}
+[24.160530] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSMiddleware.hpp\n'}
+[24.160580] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils\n'}
+[24.160612] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils/Callbacks.hpp\n'}
+[24.160652] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced\n'}
+[24.160698] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedMiddleware.hpp\n'}
+[24.160739] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedEntities.hpp\n'}
+[24.160782] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast\n'}
+[24.160828] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastMiddleware.hpp\n'}
+[24.160871] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastEntities.hpp\n'}
+[24.160919] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/subscriber\n'}
+[24.160952] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/subscriber/Subscriber.hpp\n'}
+[24.161001] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/Root.hpp\n'}
+[24.161034] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/visibility.hpp\n'}
+[24.161083] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/p2p\n'}
+[24.161124] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClient.hpp\n'}
+[24.161155] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClientManager.hpp\n'}
+[24.161201] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/message\n'}
+[24.161233] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/message/Packet.hpp\n'}
+[24.161282] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/message/OutputMessage.hpp\n'}
+[24.161340] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/message/InputMessage.hpp\n'}
+[24.161389] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/scheduler\n'}
+[24.161437] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/scheduler/PacketScheduler.hpp\n'}
+[24.161482] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/scheduler/Scheduler.hpp\n'}
+[24.161531] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/topic\n'}
+[24.161563] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/topic/Topic.hpp\n'}
+[24.161611] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/replier\n'}
+[24.161642] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/replier/Replier.hpp\n'}
+[24.161710] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets.cmake\n'}
+[24.161784] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets-release.cmake\n'}
+[24.161843] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/include/uxr/agent/config.hpp\n'}
+[24.161901] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/microxrcedds_agent/LICENSE\n'}
+[24.161963] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfig.cmake\n'}
+[24.162010] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfigVersion.cmake\n'}
+[24.174403] (micro_ros_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mCompleted 'xrceagent'\x1b[0m\n"}
+[24.194019] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] Built target xrceagent\n'}
+[24.207648] (micro_ros_agent) StdoutLine: {'line': b"[ 56%] \x1b[34m\x1b[1mCreating directories for 'micro_ros_agent'\x1b[0m\n"}
+[24.227200] (-) TimerEvent: {}
+[24.248007] (micro_ros_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mNo download step for 'micro_ros_agent'\x1b[0m\n"}
+[24.263291] (micro_ros_agent) StdoutLine: {'line': b"[ 68%] \x1b[34m\x1b[1mNo update step for 'micro_ros_agent'\x1b[0m\n"}
+[24.278404] (micro_ros_agent) StdoutLine: {'line': b"[ 75%] \x1b[34m\x1b[1mNo patch step for 'micro_ros_agent'\x1b[0m\n"}
+[24.292850] (micro_ros_agent) StdoutLine: {'line': b"[ 81%] \x1b[34m\x1b[1mPerforming configure step for 'micro_ros_agent'\x1b[0m\n"}
+[24.298189] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/waritt/urosrobotsim_ws/build/micro_ros_agent/micro_ros_agent-prefix/tmp/micro_ros_agent-cache-.cmake\n'}
+[24.302486] (micro_ros_agent) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[24.327302] (-) TimerEvent: {}
+[24.414434] (micro_ros_agent) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[24.427388] (-) TimerEvent: {}
+[24.527617] (-) TimerEvent: {}
+[24.538709] (micro_ros_agent) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[24.542316] (micro_ros_agent) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[24.598246] (micro_ros_agent) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[24.598411] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[24.627734] (-) TimerEvent: {}
+[24.655010] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[24.655689] (micro_ros_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[24.660851] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_cmake: 3.1.5 (/opt/ros/humble/share/rosidl_cmake/cmake)\n'}
+[24.662587] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[24.677798] (micro_ros_agent) StdoutLine: {'line': b'-- Found fastrtps_cmake_module: 2.2.2 (/opt/ros/humble/share/fastrtps_cmake_module/cmake)\n'}
+[24.679799] (micro_ros_agent) StdoutLine: {'line': b'-- Found rmw_dds_common: 1.6.0 (/opt/ros/humble/share/rmw_dds_common/cmake)\n'}
+[24.705039] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[24.712285] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[24.718537] (micro_ros_agent) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[24.727804] (-) TimerEvent: {}
+[24.728104] (micro_ros_agent) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[24.742385] (micro_ros_agent) StdoutLine: {'line': b'-- Found rmw_fastrtps_shared_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_shared_cpp/cmake)\n'}
+[24.781170] (micro_ros_agent) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[24.783053] (micro_ros_agent) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[24.785602] (micro_ros_agent) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[24.786032] (micro_ros_agent) StdoutLine: {'line': b'-- Found micro_ros_msgs: 3.0.1 (/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake)\n'}
+[24.827909] (-) TimerEvent: {}
+[24.837986] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[24.842514] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[24.843203] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/waritt/urosrobotsim_ws/build/micro_ros_agent\n'}
+[24.858143] (micro_ros_agent) StdoutLine: {'line': b"[ 87%] \x1b[34m\x1b[1mPerforming build step for 'micro_ros_agent'\x1b[0m\n"}
+[24.884481] (micro_ros_agent) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/main.cpp.o\x1b[0m\n'}
+[24.884649] (micro_ros_agent) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/Agent.cpp.o\x1b[0m\n'}
+[24.884730] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_manager.cpp.o\x1b[0m\n'}
+[24.884786] (micro_ros_agent) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_typesupport.cpp.o\x1b[0m\n'}
+[24.884852] (micro_ros_agent) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/utils/demangle.cpp.o\x1b[0m\n'}
+[24.928078] (-) TimerEvent: {}
+[25.028410] (-) TimerEvent: {}
+[25.128722] (-) TimerEvent: {}
+[25.228993] (-) TimerEvent: {}
+[25.329323] (-) TimerEvent: {}
+[25.429568] (-) TimerEvent: {}
+[25.529836] (-) TimerEvent: {}
+[25.630100] (-) TimerEvent: {}
+[25.730313] (-) TimerEvent: {}
+[25.830591] (-) TimerEvent: {}
+[25.930960] (-) TimerEvent: {}
+[26.031373] (-) TimerEvent: {}
+[26.131652] (-) TimerEvent: {}
+[26.231904] (-) TimerEvent: {}
+[26.332303] (-) TimerEvent: {}
+[26.432783] (-) TimerEvent: {}
+[26.533218] (-) TimerEvent: {}
+[26.633525] (-) TimerEvent: {}
+[26.733826] (-) TimerEvent: {}
+[26.834117] (-) TimerEvent: {}
+[26.934346] (-) TimerEvent: {}
+[27.034618] (-) TimerEvent: {}
+[27.134870] (-) TimerEvent: {}
+[27.235164] (-) TimerEvent: {}
+[27.303926] (micro_ros_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable micro_ros_agent\x1b[0m\n'}
+[27.335264] (-) TimerEvent: {}
+[27.435509] (-) TimerEvent: {}
+[27.510684] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target micro_ros_agent\n'}
+[27.526012] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mNo install step for 'micro_ros_agent'\x1b[0m\n"}
+[27.535652] (-) TimerEvent: {}
+[27.541010] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mCompleted 'micro_ros_agent'\x1b[0m\n"}
+[27.574589] (micro_ros_agent) StdoutLine: {'line': b'Built target micro_ros_agent\n'}
+[27.588788] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[27.616098] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'install'}
+[27.616388] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/waritt/urosrobotsim_ws/build/micro_ros_agent'], 'cwd': '/home/waritt/urosrobotsim_ws/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'waritt'), ('LC_TIME', 'th_TH.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/micro_ros_agent/lib:/home/waritt/uros_ws/install/micro_ros_msgs/lib:/home/waritt/uros_ws/install/imu_interfaces/lib:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/lib:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/lib:/home/waritt/ros2_ws/install/robot_sim_interfaces/lib:/home/waritt/ros2_ws/install/lab1_interfaces/lib:/home/waritt/ros2_ws/install/controller_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/waritt'), ('OLDPWD', '/home/waritt'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'th_TH.UTF-8'), ('SYSTEMD_EXEC_PID', '2529'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install:/home/waritt/uros_ws/install:/home/waritt/robotsim_ws/install:/home/waritt/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'waritt'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'waritt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/waritt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/waritt-notebook-1:@/tmp/.ICE-unix/2505,unix/waritt-notebook-1:/tmp/.ICE-unix/2505'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'th_TH.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1a8ada08_bedc_48a7_bb6d_db9eb658732c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'th_TH.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.135'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '50'), ('AMENT_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs:/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'th_TH.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'th_TH.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'th_TH.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/waritt/urosrobotsim_ws/build/micro_ros_agent'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_interfaces/local/lib/python3.10/dist-packages:/home/waritt/uros_ws/install/imu_calibration/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot_interfaces/local/lib/python3.10/dist-packages:/home/waritt/robotsim_ws/install/rrr_robot/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtlesim_plus/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/turtle_bringup/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/tecture2/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/robot_sim_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1_interfaces/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/lab1/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/example_description/local/lib/python3.10/dist-packages:/home/waritt/ros2_ws/install/controller_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'th_TH.UTF-8'), ('LC_PAPER', 'th_TH.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/waritt/urosrobotsim_ws/install/micro_ros_msgs:/home/waritt/urosrobotsim_ws/install/micro_ros_setup:/home/waritt/urosrobotsim_ws/install/megarover_samples_ros2:/home/waritt/uros_ws/install/micro_ros_setup:/home/waritt/uros_ws/install/micro_ros_agent:/home/waritt/uros_ws/install/micro_ros_msgs:/home/waritt/uros_ws/install/imu_interfaces:/home/waritt/uros_ws/install/imu_calibration:/home/waritt/robotsim_ws/install/rrr_robot_interfaces:/home/waritt/robotsim_ws/install/rrr_robot:/home/waritt/ros2_ws/install/urdf_tutorial:/home/waritt/ros2_ws/install/turtlesim_plus_interfaces:/home/waritt/ros2_ws/install/turtlesim_plus:/home/waritt/ros2_ws/install/turtle_bringup:/home/waritt/ros2_ws/install/tecture2:/home/waritt/ros2_ws/install/robot_sim_interfaces:/home/waritt/ros2_ws/install/lab1_interfaces:/home/waritt/ros2_ws/install/lab1:/home/waritt/ros2_ws/install/example_description:/home/waritt/ros2_ws/install/controller_interfaces:/opt/ros/humble')]), 'shell': False}
+[27.622202] (micro_ros_agent) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[27.622356] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent\n'}
+[27.622572] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent\n'}
+[27.622617] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.sh\n'}
+[27.622662] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.dsv\n'}
+[27.622696] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/environment/path.sh\n'}
+[27.622746] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/environment/path.dsv\n'}
+[27.622778] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.bash\n'}
+[27.622823] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.sh\n'}
+[27.622869] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.zsh\n'}
+[27.622908] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.dsv\n'}
+[27.622960] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv\n'}
+[27.623029] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/ament_index/resource_index/packages/micro_ros_agent\n'}
+[27.623098] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[27.623151] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig.cmake\n'}
+[27.623195] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig-version.cmake\n'}
+[27.623247] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/package.xml\n'}
+[27.623354] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent\n'}
+[27.624068] (micro_ros_agent) StdoutLine: {'line': b'-- Set runtime path of "/home/waritt/urosrobotsim_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent" to ""\n'}
+[27.624111] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/launch\n'}
+[27.624142] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/waritt/urosrobotsim_ws/install/micro_ros_agent/share/micro_ros_agent/launch/micro_ros_agent_launch.py\n'}
+[27.625020] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[27.635756] (-) TimerEvent: {}
+[27.660284] (micro_ros_agent) JobEnded: {'identifier': 'micro_ros_agent', 'rc': 0}
+[27.660675] (-) EventReactorShutdown: {}
