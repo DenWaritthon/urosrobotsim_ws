@@ -1,4 +1,4 @@
-23:00:42 **** Incremental Build of configuration Debug for project megarover_joystick_uros ****
+11:18:05 **** Incremental Build of configuration Debug for project megarover_joystick_uros ****
 make -j16 all 
 docker pull microros/micro_ros_static_library_builder:humble && docker run --rm -v /home/waritt/urosrobotsim_ws/firmware/megarover_joystick_uros:/project --env MICROROS_LIBRARY_FOLDER=micro_ros_stm32cubemx_utils/microros_static_library_ide microros/micro_ros_static_library_builder:humble
 humble: Pulling from microros/micro_ros_static_library_builder
@@ -11,9 +11,9 @@ Delete micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/ for 
  
 arm-none-eabi-size  megarover_joystick_uros.elf 
    text	   data	    bss	    dec	    hex	filename
- 117740	   2656	  47304	 167700	  28f14	megarover_joystick_uros.elf
+ 115000	   2464	  47032	 164496	  28290	megarover_joystick_uros.elf
 Finished building: default.size.stdout
  
 
-23:00:46 Build Finished. 0 errors, 0 warnings. (took 3s.536ms)
+11:18:08 Build Finished. 0 errors, 0 warnings. (took 2s.937ms)
 

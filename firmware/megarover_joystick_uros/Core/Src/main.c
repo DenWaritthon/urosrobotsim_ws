@@ -52,16 +52,6 @@ typedef struct {
 	double z;
 }offset3D_t;
 
-typedef struct {
-	double angle;
-	double bias;
-	double rate;
-	double P[2][2];
-	double Q_angle;
-	double Q_bias;
-	double R_measure;
-} KalmanFilter;
-
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -94,7 +84,6 @@ rclc_executor_t executor;
 
 // Publisher
 rcl_publisher_t mpu6050_publisher;
-rcl_publisher_t cmd_vel_publisher;
 
 // Service server
 rcl_service_t mpu6050_service;
@@ -116,20 +105,6 @@ offset3D_t gyro_offset;
 
 double dt = 0.01;
 
-KalmanFilter kalman_roll;
-KalmanFilter kalman_pitch;
-
-double acc_roll_angle = 0.0;
-double acc_pitch_angle = 0.0;
-
-double roll_angle;
-double pitch_angle;
-double roll_vel;
-double pitch_vel;
-
-double linear_vel_x = 0.0;
-double angular_vel_z = 0.0;
-
 bool is_calibrate = false;
 /* USER CODE END PV */
 
@@ -150,63 +125,6 @@ void * microros_zero_allocate(size_t number_of_elements, size_t size_of_element,
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void Kalman_Init(KalmanFilter *kalman) {
-    kalman->angle = 0.0;
-    kalman->bias = 0.0;
-    kalman->P[0][0] = 1.0;
-    kalman->P[0][1] = 0.0;
-    kalman->P[1][0] = 0.0;
-    kalman->P[1][1] = 1.0;
-    kalman->Q_angle = 0.001;
-    kalman->Q_bias = 0.003;
-    kalman->R_measure = 0.03;
-}
-void angle_from_acc(){
-	double acc_x = MPU6050.Ax - accel_offset.x;
-	double acc_y = MPU6050.Ay - accel_offset.y;
-	double acc_z = MPU6050.Az - accel_offset.z;
-
-	acc_roll_angle = RAD2DEG * atan2(acc_y , sqrt((acc_x*acc_x) + (acc_z*acc_z)));
-	acc_pitch_angle = RAD2DEG * atan2(-1 * acc_x , sqrt((acc_y*acc_y) + (acc_z*acc_z)));
-}
-
-double angle_kalman(KalmanFilter *kalman, double new_angle, double new_rate){
-	// prediction step
-	kalman->rate = new_rate - kalman->bias;
-	kalman->angle += dt * kalman->rate;
-
-	// update covariance matrix
-	kalman->P[0][0] += dt * (dt * kalman->P[1][1] - kalman->P[0][1] - kalman->P[1][0] + kalman->Q_angle);
-	kalman->P[0][1] -= dt * kalman->P[1][1];
-	kalman->P[1][0] -= dt * kalman->P[1][1];
-	kalman->P[1][1] += kalman->Q_bias * dt;
-
-	// update value
-	double S = kalman->P[0][0] + kalman->R_measure;
-	double K[2];
-	K[0] = kalman->P[0][0] / S;
-	K[1] = kalman->P[1][0] / S;
-
-	double y = new_angle - kalman->angle;
-	kalman->angle += K[0] * y;
-	kalman->bias += K[1] * y;
-
-	// update covariance matrix
-	double P00_temp = kalman->P[0][0];
-	double P01_temp = kalman->P[0][1];
-
-	kalman->P[0][0] -= K[0] * P00_temp;
-	kalman->P[0][1] -= K[0] * P01_temp;
-	kalman->P[1][0] -= K[1] * P00_temp;
-	kalman->P[1][1] -= K[1] * P01_temp;
-
-	return kalman->angle;
-}
-
-void convert_to_cmd_vel(){
-	linear_vel_x = roundf((roll_angle + 1.0) * 100) / 100;
-	angular_vel_z = roundf((pitch_angle - 8.2)* 100) / 100;
-}
 
 void pub_mpu6050(){
 	// Set value in mpu6050_msg
@@ -271,30 +189,8 @@ void timer_callback(rcl_timer_t * timer, int64_t last_call_time){
 	if (timer != NULL) {
 		// Read mpu6050
 		MPU6050_Read_All(&hi2c1, &MPU6050);
-		if (is_calibrate){
-			// call mpu6050 publish function
-			pub_mpu6050();
-
-			// calculate angle
-			roll_vel = DEG2RAD * MPU6050.Gx - gyro_offset.x;
-			pitch_vel = DEG2RAD * MPU6050.Gy - gyro_offset.y;
-
-			angle_from_acc();
-
-			roll_angle = angle_kalman(&kalman_roll, acc_roll_angle, roll_vel);
-			pitch_angle = angle_kalman(&kalman_pitch, acc_pitch_angle, pitch_vel);
-
-
-			// Set value in cmd_vel_msg
-			convert_to_cmd_vel();
-			cmd_vel_msg.linear.x = linear_vel_x;
-			cmd_vel_msg.angular.z = angular_vel_z;
-
-			// Publish cmd_vel
-			RCSOFTCHECK(rcl_publish(&cmd_vel_publisher, &cmd_vel_msg, NULL));
-
-
-		}
+		// call mpu6050 publish function
+		pub_mpu6050();
 	}
 }
 
@@ -330,7 +226,7 @@ void StartDefaultTask(void *argument){
   rclc_support_init_with_options(&support, 0, NULL, &init_options, &allocator);
 
   // create node
-  rclc_node_init_default(&node, "megarover_joy_node", "", &support);
+  rclc_node_init_default(&node, "mpu6050_node", "", &support);
 
   // sync time
   rmw_uros_sync_session(1000);
@@ -351,13 +247,6 @@ void StartDefaultTask(void *argument){
   	  "mpu6050_publisher"
   );
 
-  rclc_publisher_init_best_effort(
-	  &cmd_vel_publisher,
-	  &node,
-	  ROSIDL_GET_MSG_TYPE_SUPPORT(geometry_msgs, msg, Twist),
-	  "cmd_vel"
-  );
-
   // create service
   rclc_service_init_default(
 	  &mpu6050_service,
@@ -370,7 +259,7 @@ void StartDefaultTask(void *argument){
 	  &mpu6050_status_service,
 	  &node,
 	  ROSIDL_GET_SRV_TYPE_SUPPORT(imu_interfaces, srv, ImuStatus),
-	  "imu/status"
+	  "status"
   );
 
   // create executor
@@ -422,8 +311,6 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
   while (MPU6050_Init(&hi2c1) == 1);
-  Kalman_Init(&kalman_roll);
-  Kalman_Init(&kalman_pitch);
   /* USER CODE END 2 */
 
   /* Init scheduler */
